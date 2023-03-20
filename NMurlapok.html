@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlapok Nágel Marcell</title>
+    <script>
+        function kiir() {
+            var szoveg=document.elso.beszoveg.value
+            alert("A beírt szöveg: "+szoveg)
+
+            var szam=document.elso.beszam.value
+            alert("A beírt szám: "+szam)
+
+            var email=document.elso.beemail.value
+            alert("A beírt email: "+email)
+
+            var datum=document.elso.bedatum.value
+            alert("A dátum: "+datum)
+
+            var ido=document.elso.beido.value
+            alert("Az idő: "+ido)
+
+            var szin=document.elso.beszin.value
+            alert("A szín: "+szin)
+
+            var fajl=document.elso.befajl.value
+            alert("A fájl: "+fajl)
+
+            var radiogomb=document.elso.beradio.value
+            alert("A bekért gomb értéke: "+radiogomb)
+            
+            var valasztas=document.elso.bevalasz.value
+            alert("A bekért választás értéke: "+valasztas)
+
+            var csuszka=document.elso.becsusz.value
+            alert("A bekért  csuszka értéke: "+csuszka)
+
+            var kivalasztas=document.elso.beki.value
+            alert("A bekért  kiválasztás értéke: "+kivalasztas)
+
+            var szovegmezo=document.elso.textbe.value
+            alert("A bekért szövegmező: "+szovegmezo)
+
+            var jelszo=document.elso.jelszobe.value
+            alert("A bekért jelszó: "+jelszo)
+
+            var kereses=document.elso.bekeres.value
+            alert("A bekért keresés: "+kereses)
+
+
+
+            
+
+
+
+
+            
+        }
+    </script>
+</head>
+<body>
+    <form name="elso">
+        <label>Szöveg</label>
+        <input type="text" name="beszoveg" value="" />
+        <br />
+        <label>Szám</label>
+        <input type="number" name="beszam" value="" />
+        <br />
+        <label>E-mail</label>
+        <input type="email" name="beemail" value="" />
+        <br />
+        <label>Dátum</label>
+        <input type="date" name="bedatum" value="" />
+        <br />
+        <label>Idő</label>
+        <input type="time" name="beido" value="" />
+        <br />
+        <label>Szín</label>
+        <input type="color" name="beszin" value="" />
+        <br />
+        <label>File</label>
+        <input type="file" name="befajl" value="" />
+        <br />
+        <label>Radio gombok</label>
+        <input type="radio" name="beradio" value="1" />
+        <input type="radio" name="beradio" value="2" />
+        <input type="radio" name="beradio" value="3" />
+        <br />
+        <label>Választás</label>
+        <input type="checkbox" name="bevalasz" value="1" />
+        <input type="checkbox" name="bevalasz" value="2" />
+        <input type="checkbox" name="bevalasz" value="3" />
+        <br />
+        <label>Csúszka</label>
+        <input type="range" name="becsusz" value="" />
+        <br />
+        <label>Kiválasztás</label>
+        <select name="beki">
+            <option value="V1" >V1</option>
+            <option value="V2" >V2</option>
+            <option value="V3" >V3</option>
+        </select>
+        <br />
+        <label>Szöveg terület</label>
+        <textarea name="textbe"></textarea>
+        <br />
+        <label>A gomb</label>
+        <input type="button" name="gomb" value="Erre kell rányomni ha be lett jelölve/írva minden" onclick="kiir()" />
+        <br />
+        <label>Törlés</label>
+        <input type="reset" name="name" value="Törlés" />
+        <br />
+        <label>Jelszó</label>
+        <input type="password" name="jelszobe" value="" />
+        <br />
+        <label>Küldés</label>
+        <input type="submit" name="name" value="Beküldés" />
+        <br />
+        <label>Keresés</label>
+        <input type="search" name="bekeres" value="Keres" />
+    </form>
+</body>
+</html>
